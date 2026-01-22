@@ -57,9 +57,8 @@ public class CommunicationThread extends Thread {
                 JSONObject spritesObject = jsonObject.getJSONObject("sprites");
                 String imageUrl =  spritesObject.getString("front_default");
 
-                printWriter.println(abilityName);
-                printWriter.println(typeName);
-                printWriter.println(imageUrl);
+                String result = abilityName + " " + typeName + " " + imageUrl;
+                printWriter.println(result);
             }
         } catch (IOException | JSONException e) {
             Log.d(Constants.TAG, e.getMessage());

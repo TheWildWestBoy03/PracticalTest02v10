@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
                 TextView abilitiesTextView = (TextView) findViewById(R.id.abilities_section_result);
                 TextView typesTextView = (TextView) findViewById(R.id.types_section_result);
-                ClientThread newThread = new ClientThread(abilitiesTextView, typesTextView);
+                ImageView imageView = (ImageView) findViewById(R.id.poke_image);
+                ClientThread newThread = new ClientThread(abilitiesTextView, typesTextView, imageView);
                 newThread.startClient(pokemonNameEdit);
             }
         }
