@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#f90"
         android:text="SEARCH"
-
+        android:id="@+id/search_button"
         app:layout_constraintStart_toEndOf="@id/pokemon_edit_title"
         app:layout_constraintTop_toBottomOf="@id/app_title"
         android:layout_marginStart="20dp"
